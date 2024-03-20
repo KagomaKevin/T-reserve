@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css files/entypo.css">
+    <link rel="stylesheet" href="../css files/header.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../LOGO/agency/logo10.png">
+    
+    <link rel="stylesheet" href="../css files/tours.css">
+</head>
+
+<style>
+    
+    .nav i{
+      opacity: 0;
+      color: blue;
+      font-size: large;
+      position: relative;
+      top: 15px;
+      transition: .3s ease-in-out;
+    }
+
+    .active i{
+      opacity: 1;
+      position: relative;
+      top: 2px;
+      font-size: larger;
+    }
+
+    .nav li a:hover i{
+      opacity: 1;
+      position: relative;
+      top: 1px;
+      color: blue;
+      transition: .3s ease-in-out;
+    }
+    .nav{
+        position: relative;
+        bottom: 8px;
+        height: 100px;
+        gap: 23em;
+        
+      }
+
+      
+.login i{
+    font-size: 30px;
+    margin-left: 43.6em;
+    position: relative;
+    bottom: 2.5em;
+}
+ul{
+    position: relative;
+    top: 30px;
+}
+
+
+/*======== back to top=========*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+#myBtn:hover {
+  background-color: darkcyan;
+}
+img{
+  width: 200px;
+  height: 70px;
+}
+
+
+.all-nav{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  bottom: 517px;
+
+}
+
+
+.nav img{
+    position: relative;
+    top: 10px;
+    width: 200px;
+     height: 83px;
+  }
+  </style>
+
+<body>
+  <div class="all-nav">
+    <div class="nav">
+        <div class="logo">
+            <img src="../LOGO/agency/logo10.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../html files/index.html">Home<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/about.html">About<i class="entypo-record"></i> </a></li>
+            <li><a href="../html files/service.html">Service<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/bus.html">Bus<i class="entypo-record"></i></a></li>
+            <li><a class="active">Tours<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/contact.html">Contact<i class="entypo-record"></i></a></li>
+        </ul>
+      
+    </div>
+    <div class="login">
+        <i class="entypo-login"></i>
+    </div>
+
+  </div>
+
+    
+    
+  <!--=========== BACK TO TOP BUTTON ==============-->
+
+  <button onclick="topFunction()" id="myBtn" title="Back to top">TOP</button>
+
+  <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function(){scrollfunction()};
+
+      function scrollfunction(){
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+              mybutton.style.display = "block";
+             
+          }
+          else{
+                  mybutton.style.display = "none";
+              }
+      }
+
+      function topFunction(){
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+  </script>
+
+    
+<!--========= OUR TOURS ============-->
+
+
+<div class="banner">
+  <h2>Our Tours </h2>
+  <span><a href="../html files/index.html">Home</a><i> &rightarrow;</i> <a href="../html files/contact.html">Contact</a></span>
+</div>
+
+<fieldset>
+  <legend><h2>Our Tours</h2></legend>
+
+
+<div class="tour">
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Kigali - Nyanza</h3>
+          
+          <span>Frw 1850</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Kigali - Huye</h3>
+          <span>Frw 2560</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Kigali - Muhanga</h3>
+          <span>Frw 1030</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Kigali - Muhanga</h3>
+          <span>Frw 1490</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3 style="margin-left: -1.6em;">Muhanga - Ruhango</h3>
+          <span>Frw 550</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3  style="margin-left: -1.6em;">Muhanga - Nyanza</h3>
+          <span>Frw 820</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Muganga - Huye</h3>
+          <span>Frw 380</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Ruhango - Huye</h3>
+          <span>Frw 1070</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Huye - Nyanza</h3>
+          
+          <span>Frw 740</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+ 
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Munini - Ndago</h3>
+          <span>Frw 300</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Munini - Kamira</h3>
+          <span>Frw 300</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+      <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+      <div class="text">
+          <h3>Munini - Ruheru</h3>
+          
+          <span>Frw 1000</span>
+          <div class="btn">
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+          </div>
+      </div>
+  </div>
+  <div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Nyanza</h3>
+        
+        <span>Frw 1850</span>
+        <div class="btn">
+             <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+<div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Huye</h3>
+        <span>Frw 2560</span>
+        <div class="btn">
+             <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+<div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Muhanga</h3>
+        <span>Frw 1030</span>
+        <div class="btn">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+<div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Muhanga</h3>
+        <span>Frw 1490</span>
+        <div class="btn">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+<div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Nyanza</h3>
+        
+        <span>Frw 1850</span>
+        <div class="btn">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+<div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Huye</h3>
+        <span>Frw 2560</span>
+        <div class="btn">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+<div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Muhanga</h3>
+        <span>Frw 1030</span>
+        <div class="btn">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+<div class="tours">
+    <img src="../LOGO/LOGOS/bisi (1).png" alt="">
+    <div class="text">
+        <h3>Kigali - Muhanga</h3>
+        <span>Frw 1490</span>
+        <div class="btn">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:100px; text-align:center;">SELECT</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</fieldset>
+
+
+
+<!--======== MODAL FORM ==========-->
+
+
+
+<div id="id01" class="modal">
+  
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1 style="border-left: 7px blue solid; padding:10px;color:blue;">Reserve Now</h1><br>
+        <p style="color: blue;font-size:large;">Please fill in this form to reserve your ticket.</p>
+        <hr><br>
+        <h3 style="text-align: center;">Personal informations</h3><br>
+        <label for="name"><b>Full_name :</b></label><br>
+        <input type="text" placeholder="Enter full name" name="name" required>
+  
+        <label for="email"><b>E-mail :</b></label><br>
+        <input type="email" placeholder="example1@gmail.com" name="email" required>
+  
+        <label for="Phone"><b>Phone number :</b></label><br>
+        <input type="tel" placeholder="telphone" name="phone" required>
+
+        <label for="ID"><b>ID Number :</b></label><br>
+        <input type="text" placeholder="Enter ID Number" name="id_number" required>
+
+        <h3 style="text-align: center;">Reserving Details</h3><br>
+
+        <label for="tickets"><b>How many tickets needed ? :</b></label><br>
+        <input type="number" placeholder="number of tickets" name="number_tickes" required>
+  
+        <label for="date"><b>Date And Time tickets needed :</b></label><br>
+        <input type="datetime-local" placeholder="" name="date_needed" required id="tress">
+        
+        <label for="from"><b>FROM :</b></label><br>
+        <input type="text" placeholder="FROM KIGALI" name="Where_from" disabled title="Automatically Setted">
+
+        <label for="destination"><b>Destination :</b></label><br>
+        <input type="text" placeholder="Enter where you want to go" name="id_number" required>
+
+
+        <div class="clearfix">
+          <button type="submit" id="wivin">SUBMIT</button>
+          
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+  
+
+
+
+
+      <!--================== FOOTER =======================-->
+
+      <div class="foot">
+        <div class="image">
+            <img src="../LOGO/agency/logo10.png" alt=""><br><br><br>
+
+           <a href="https//:www.facebook.com"> <i class="entypo-facebook"></i></a>     
+           <a href="https//:www.liknkedin.com"><i class="entypo-linkedin"></i></a>
+            
+            <a href="https//:www.instagram.com"><i class="entypo-instagram"></i></a>
+            <a href="https//:www.twitter.com"> <i class="entypo-twitter"></i></a>
+            <h4>Office Working Hours</h4>
+            <span class="unique">Monday - Friday</span><br>
+            <span> 07 : 30 AM - 21 : 00 PM</span><br>
+            <span class="unique">Saturday - Sunday</span><br>
+            <span>07 : 30 AM - 18 : 30 PM</span>
+             
+        </div>
+        <div class="aboutt">
+            <h3>How To Reserve </h3>
+            <ul>
+                <li>On our Tours page </li>
+                <li>Select your destination </li>
+                <li>Fill the given form to provide imformation</li>
+                <li>Submit your form with filled all filieds required</li>
+                <li>Select your payment method</li>
+                <li>Comfirm your payment</li>
+            </ul>
+            <h4>Newsletter</h4>
+            <i>Please leave us your email <br> to give your subscription <br> if you've satisfied with our services</i><br><br>
+            <form action="" method="post">
+                <input type="email" name="email" placeholder="example@gmail.com"><i class="entypo-mail" style="color: blue;"></i>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <div class="links">
+            <h4 style="margin-left: -1em;">Quick link</h4>
+            <ul>
+                <a href="../html files/index.html"><li>Home</li></a>
+                <a href="../html files/about.html"><li>About</li></a>
+                <a href="../html files/service.html"><li>Service</li></a>
+                <a href="../html files/bus.html"><li>Bus</li></a>
+                <a href="../html files/tours.html"><li>Tours</li></a>
+                <a href="../html files/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+       
+        <div class="our-service">
+            <h4>Our services</h4>
+            <ol>
+                <a href=""><li>Bus reservation</a></li>
+                <li><a href=""><li>Direct ticket </a></li>
+                <li><a href=""><li>Future use ticket </a></li>
+                
+            </ol>
+              <h4>Map<i class="entypo-location"></i></h4>
+            <img src="../1280x768/natcoms2.png" alt="">
+              </div>
+        <div class="address">
+            <h4>Contact us</h4>
+            
+         
+            <a href="https//:www.facebook.com"><i class="entypo-facebook"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.twitter.com"><i class="entypo-twitter"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.instagram.com"><i class="entypo-instagram"></i>@t-reserve_rw</a><br><br>
+            <a href="https//:www.t-reserve.com"><i class="entypo-home" style="font-style: normal ;">www.t-reserve.com</a></i><br><br>
+            <i class="entypo-mobile">+250 - 7800 - 94116</i><br>
+            <h4>Address</h4>
+            <i class="entypo-location"></i>Kigali - Rwanda <br>
+            <i class="entypo-map"></i>Kacyiru - Kinamba
+
+        </div>
+        
+      </div>
+
+      <div class="footer">
+        <i>&COPY;copyright 2023 all right reserved | T-reserve company ltd |&heartsuit; Desgned by Kagoma_kevin &hearts; </i>
+      </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css files/index.css">
+    <link rel="stylesheet" href="./css files/header.css">
+    
+    <link rel="stylesheet" href="./css files/entypo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./LOGO/agency/logo10.png">
+   
+    <style>
+      .nav i{
+        opacity: 0;
+        color: blue;
+        font-size: large;
+        position: relative;
+        top: 15px;
+        transition: .3s ease-in-out;
+      }
+      .nav{
+        gap: 23em;
+        padding: 4px;
+      }
+      
+ul{
+    position: relative;
+    top: 13px;
+}
+
+
+      
+.login i{
+    font-size: 30px;
+    margin-left: 43.7em;
+    position: relative;
+    bottom: 3em;
+   
+}
+
+      .active i{
+        opacity: 1;
+        position: relative;
+        top: 2px;
+        font-size: larger;
+      }
+      .nav{
+        position: relative;
+        bottom: 30px;
+        height: 80px;
+        gap: 23em;
+
+        
+      }
+
+      .nav li a:hover i{
+        opacity: 1;
+        position: relative;
+        top: 1px;
+        transition: .3s ease-in-out;
+        color: blue;
+      }
+      #text {
+        display:none;
+        color:red
+    }
+
+    
+.all{
+    
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    bottom: 497px;
+  
+  }
+
+  .logo img{
+    position: relative;
+    bottom: 10px;
+    width: 200px;
+    height: 80px;
+  }
+    </style>
+</head>
+<body>
+    <div class="all">
+        
+    <div class="nav">
+        <div class="logo">
+            <img src="./LOGO/agency/logo10.png" alt="">
+        </div>
+        <ul>
+            <li><a class="active" href="./html files/index.html">Home <i class="entypo-record"></i> </a></li>
+            <li><a href="./html files/about.html">About<i class="entypo-record"></i></a></li>
+            <li><a href="./html files/service.html">Service<i class="entypo-record"></i></a></li>
+            <li><a href="./html files/bus.html">Bus<i class="entypo-record"></i></a></li>
+            <li><a href="./html files/tours.html">Tours<i class="entypo-record"></i></a></li>
+            <li><a href="./html files/contact.html">Contact<i class="entypo-record"></i></a></li>
+        </ul>
+      
+    </div>
+    <div class="login">
+       <i class="entypo-login"></i>
+    </div>
+
+  
+    
+</div>
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top">TOP</button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function(){scrollfunction()};
+
+        function scrollfunction(){
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                mybutton.style.display = "block";
+                               
+            }
+            else{
+                    mybutton.style.display = "none";
+                }
+        }
+
+        function topFunction(){
+            
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+<div class="iphoto">
+    <img src="./LOGO/LOGOS/one (1).png" alt=""><br><br><br><br><br><br><br><br>
+    
+</div>
+
+    <div class="about-1">
+        <h2>T-Reserve</h2><br>
+        <p>
+            Welcome to T-Reserve an online tickets reservations  <br>
+            you can reerve your direct and future use tickets here and bus booking .
+        </p>
+    </div>
+
+
+    <!--==================== ABOUTUS FEW ====================-->
+ <section id="aboutus">
+        <div class="alll">
+            <div class="left">
+                <h1>T-RESERVE</h1>
+                <span>Reserve your ticket any time & any where  </span>
+            </div>
+            <div class="right">
+                <h1>Why T-Reserve ?</h1><br>
+                
+                <p>
+                    There are some main reasons that you may consider while chosing to work with us <br>
+                    <span style="color: blue; font-weight: bold;"> T - Reserve </span> is :
+                </p><br>
+                <p class="entypo-check">Trusted </p>
+                <p class="entypo-check">Safe and secure</p>
+               <p class="entypo-check">Quick service</p>
+                <p class="entypo-check">Bus reservation.</p>
+                <p class="entypo-check">Time management.</p>
+                <p class="entypo-check">Money management.</p>
+                <p class="entypo-check">Prevation of chous in bus parks</p>
+                <p class="entypo-check">Future use ticket reservation</p>
+                <p class="entypo-check">Direct ticket reservation</p>
+                
+               <a href="about.html"> <input type="button" value="EXPLORE MORE"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==================== SERVICE FEW ====================-->
+
+    
+
+    <div class="service-heard">
+       
+        <h2>Our Featured Services</h2><br>
+        <p>There are some services that we must offer <br> such as direct or current day use ticket 
+            future use ticket , bus reservations :
+        </p>
+    </div><br><br><br><br><br>
+
+    <div class="service-par">
+        <div class="service-chd">
+            <img src="./LOGO/LOGOS/used (1).png" alt="">
+            <a href="service.html"><button>View more</button></a>
+            <p>Direct Ticket Reservation</p>
+        </div>
+        <div class="service-chd">
+            <img src="./LOGO/LOGOS/used (2).png" alt="">
+            <a href="service.html"><button>View more</button></a>
+            <p>Future Ticket Reservation</p>
+        </div>
+        <div class="service-chd">
+            <img src="./LOGO/LOGOS/buss.png" alt="">
+            <a href="service.html"><button>View more</button></a>
+            <p>Bus Reservation</p>
+        </div>
+    </div>
+
+    
+        <!--==================== OUR TOURS FEW ====================-->
+
+
+        <div class="tours-heard">
+       
+            <h2>Some Of Our Destinations </h2><br><br>
+            <p>We mostly travel in some destinations from kigali to provinces but <br> within the region 
+                , there are some f our destinations that we mostly travel in :
+                 
+            </p>
+        </div>
+        
+        <div class="tours">
+            <div class="child">
+                <img src="./LOGO/LOGOS/bisi (3).png" alt="">
+                <p>Kigali - Butare</p>
+                <a href="./html files/tours.html"><button>Select</button></a>
+            </div>
+            <div class="child">
+                <img src="./LOGO/LOGOS/bisi (3).png" alt="">
+                <p>Kigali - Huye</p>
+                <a href="./html files/tours.html"><button>Select</button></a>
+            </div>
+            <div class="child">
+                <img src="./LOGO/LOGOS/bisi (3).png" alt="">
+                <p>Kigali - Nyanza</p>
+                <a href="./html files/tours.html"><button>Select</button></a>
+            </div>
+            <div class="child">
+                <img src="./LOGO/LOGOS/bisi (3).png" alt="">
+                <p>Kigali - Nyamagabe</p>
+                <a href="./html files/tours.html"><button>Select</button></a>
+            </div>
+            <div class="child">
+                <img src="./LOGO/LOGOS/bisi (3).png" alt="">
+                <p>Kigali - Nyaruguru</p>
+                <a href="./html files/tours.html"><button>Select</button></a>
+            </div>
+        </div>
+       
+        
+      <!--==================== OUR CONTACTS ====================-->
+
+      <div class="cont-head">
+        <h2>KEEP IN TOUCH WITH US &phone; ! </h2>
+        <p>For the more information you can also contact us inorder to keep get in touch <br> 
+           you can also send us your suggestions , your suggestions it's a must to us
+        </p>
+      </div><br>
+      <!--<div class="imagee">
+            <img src="../1280x768/natcoms2.png" alt="">
+      </div>
+      <div class="container-contacts">
+        
+      <fieldset> <legend>Keep in touch with us</legend><br><br>
+     <form action="" method="post">
+       <i> Name :</i> <input type="text" name="" id="" placeholder="Full name">
+        <i> E-mail :</i> <input type="email" name="" id="" placeholder="example@gmail.com"><br><br>
+        <span> Give your suggestion ?</span><br><br>
+        <textarea name="" id="" cols="30" rows="3" placeholder="Suggetions , ideas....."></textarea> <br><br>
+        <button type="submit">Send</button>
+     </form>
+    </fieldset>
+      </div>-->
+      <div class="imagee">
+        <img src="./photo/calll (3).jpg" alt="">
+  </div>
+  
+    <div class="form">
+        
+        <div class="fm">
+        <h3>Send Us Messange </h3><br>
+        <form action="https://formsubmit.co/kevinlyrics250@gmail.com" method="POST">
+            <label for="Full_Name">Names <sup>*</sup> </label><br><br>
+            <input type="text" required name="full_name" placeholder="Full_Name" ><i class="entypo-user"></i><br>
+            
+            <label for="email">E-mail <sup>*</sup></label><br>
+            <input type="email" name="email" id="myInput" required placeholder="example@gmail.com"><i class="entypo-mail"></i><br>
+            <p id="text">WARNING ! CAPSLOCK IS ON !</p>
+            <label for="Message">Message <sup>*</sup></label><br>
+            <textarea name="messages" id="" cols="30" rows="3" placeholder="Your Message"></textarea><i class="entypo-chat"></i><br><br><br>
+            <button type="submit" name="submit">SEND</button>
+        </form>
+    </div>
+    </div>
+<script>
+    var input = document.getElementById("myInput");
+    var text = document.getElementById("text");
+
+    input.addEventListener("keyup", function(event){
+
+        if (event.getModifierState("CapsLock")) {
+            text.style.display = "block";
+        } else{
+            text.style.display = "none"
+        }
+    });
+</script>
+    
+      <!--================== TESTIMONIALS =======================-->
+
+
+
+
+<div class="testimonial">
+
+    <div class="clients">
+        <h3>What Our Clients Said ?</h3>
+    </div>
+
+    <div class="client-par">
+
+        <div class="client-chd">
+            <div class="face">
+                <img src="./photo/user-06.jpg" alt="">
+            </div>
+            <div class="word">
+                <h3>Client - name</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Fugiat, provident quisquam aliquam in dolor,
+                    enim eos magnam!
+                </p>
+                <div class="stars">
+                    <i class="entypo-star"></i>
+                    <i class="entypo-star"></i>
+                    <i class="entypo-star"></i>
+                    <i class="entypo-star"></i>
+                    <i class="entypo-star-empty"></i>
+                </div>
+            </div>
+        </div>
+    <div class="client-chd">
+        <div class="face">
+            <img src="./photo/face16.jpg" alt="">
+        </div>
+        <div class="word">
+            <h3>Client - name</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Fugiat, provident quisquam aliquam in dolor,
+                enim eos magnam!
+            </p>
+            <div class="stars">
+                <i class="entypo-star"></i>
+                <i class="entypo-star"></i>
+                <i class="entypo-star"></i>
+                <i class="entypo-star-empty"></i>
+                <i class="entypo-star-empty"></i>
+            </div>
+        </div>
+        </div>
+        <div class="client-chd">
+            <div class="face">
+                <img src="./photo/face17.jpg" alt="">
+            </div>
+            <div class="word">
+                <h3>Client - name</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Fugiat, provident quisquam aliquam in dolor,
+                    enim eos magnam!
+                </p>
+                <div class="stars">
+                    <i class="entypo-star"></i>
+                    <i class="entypo-star"></i>
+                    <i class="entypo-star-empty"></i>
+                    <i class="entypo-star-empty"></i>
+                    <i class="entypo-star-empty"></i>
+                </div>
+            </div>
+            </div>
+            <div class="client-chd">
+                <div class="face">
+                    <img src="./photo/face23.jpg" alt="">
+                </div>
+                <div class="word">
+                    <h3>Client - name</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Fugiat, provident quisquam aliquam in dolor,
+                        enim eos magnam!
+                    </p>
+                    <div class="stars">
+                        <i class="entypo-star"></i>
+                        <i class="entypo-star"></i>
+                        <i class="entypo-star"></i>
+                        <i class="entypo-star"></i>
+                        <i class="entypo-star"></i>
+                    </div>
+                </div>
+                </div> 
+
+                <div class="client-chd">
+                    <div class="face">
+                        <img src="./photo/FB_IMG_16921420626040435.jpg" alt="">
+                    </div>
+                    <div class="word">
+                        <h3>Client - name</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Fugiat, provident quisquam aliquam in dolor,
+                            enim eos magnam!
+                        </p>
+                        <div class="stars">
+                            <i class="entypo-star"></i>
+                            <i class="entypo-star"></i>
+                            <i class="entypo-star"></i>
+                            <i class="entypo-star"></i>
+                            <i class="entypo-star"></i>
+                        </div>
+                    </div>
+                    </div> 
+                    <div class="client-chd">
+                        <div class="face">
+                            <img src="./photo/face27.jpg" alt="">
+                        </div>
+                        <div class="word">
+                            <h3>Client - name</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Fugiat, provident quisquam aliquam in dolor,
+                                enim eos magnam!
+                            </p>
+                            <div class="stars">
+                                <i class="entypo-star"></i>
+                                <i class="entypo-star"></i>
+                                <i class="entypo-star"></i>
+                                <i class="entypo-star"></i>
+                                <i class="entypo-star-empty"></i>
+                            </div>
+                        </div>
+                        </div> 
+
+    </div>
+
+
+</div>
+
+
+      <!--================== FOOTER =======================-->
+
+      <div class="foot">
+        <div class="image">
+            <img src="./LOGO/agency/logo10.png" alt=""><br><br><br>
+
+            <a href="https//:www.facebook.com"> <i class="entypo-facebook"></i></a>     
+           <a href="https//:www.liknkedin.com"><i class="entypo-linkedin"></i></a>
+            
+            <a href="https//:www.instagram.com"><i class="entypo-instagram"></i></a>
+            <a href="https//:www.twitter.com"> <i class="entypo-twitter"></i></a>
+            
+            <h4>Office Working Hours</h4>
+            <span class="unique">Monday - Friday</span><br>
+            <span> 07 : 30 AM - 21 : 00 PM</span><br>
+            <span class="unique">Saturday - Sunday</span><br>
+            <span>07 : 30 AM - 18 : 30 PM</span>
+             
+        </div>
+        <div class="aboutt">
+            <h3>How To Reserve </h3>
+
+            <ul>
+                <li>On our Tours page </li>
+                <li>Select your destination </li>
+                <li>Fill the given form to provide imformation</li>
+                <li>Submit your form with filled all filieds required</li>
+                <li>Select your payment method</li>
+                <li>Comfirm your payment</li>
+            </ul>
+           
+            <h4>Newsletter</h4>
+            <i>Please leave us your email to give your subscription <br> if you've satisfied with our services</i><br><br>
+            <form action="" method="post">
+                <input type="email" name="email" placeholder="example@gmail.com"><i class="entypo-mail"></i>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <div class="links">
+            <h4 style="margin-left: -1em;">Quick link</h4>
+            <ul>
+                <a href="./html files/index.html"><li>Home</li></a>
+                <a href="./html files/about.html"><li>About</li></a>
+                <a href="./html files/service.html"><li>Service</li></a>
+                <a href="./html files/bus.html"><li>Bus</li></a>
+                <a href="./html files/tours.html"><li>Tours</li></a>
+                <a href="./html files/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+       
+        <div class="our-service">
+            <h4>Our services</h4>
+            <ol>
+                <a href=""><li>Bus reservation</a></li>
+                <li><a href=""><li>Direct ticket </a></li>
+                <li><a href=""><li>Future use ticket </a></li>
+                
+            </ol>
+              <h4>Map<i class="entypo-location"></i></h4>
+            <img src="./1280x768/natcoms2.png" alt="">
+              </div>
+        <div class="address">
+            <h4>Contact us</h4>
+            
+             
+           <a href="https//:www.facebook.com"><i class="entypo-facebook"></i>t-reserve_rw</a><br><br>
+           <a href="https//:www.twitter.com"><i class="entypo-twitter"></i>t-reserve_rw</a><br><br>
+           <a href="https//:www.instagram.com"><i class="entypo-instagram"></i>@t-reserve_rw</a><br><br>
+           <a href="https//:www.t-reserve.com"><i class="entypo-home" style="font-style: normal ;">www.t-reserve.com</a></i><br><br>
+           <i class="entypo-mobile">+250 - 7800 - 94116</i><br>
+
+            <h4>Address</h4>
+            <i class="entypo-location"></i>Kigali - Rwanda <br>
+            <i class="entypo-map"></i>Kacyiru - Kinamba
+
+        </div>
+        
+      </div>
+
+      <div class="footer">
+        <i>&COPY;copyright 2023 all right reserved | T-reserve company ltd |&heartsuit; Desgned by Kagoma_kevin &hearts; </i>
+      </div>
+      
+</body>
+</html>

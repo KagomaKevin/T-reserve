@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="../css files/entypo.css">
+    <link rel="stylesheet" href="../css files/header.css">
+    <link rel="stylesheet" href="../css files/about.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../LOGO/agency/logo10.png">
+   
+</head>
+<style>
+    .nav i{
+      opacity: 0;
+      color: blue;
+      font-size: large;
+      position: relative;
+      top: 15px;
+      transition: .3s ease-in-out;
+    }
+
+    .active i{
+      opacity: 1;
+      position: relative;
+      top: 2px;
+      font-size: larger;
+    }
+
+    .nav li a:hover i{
+      opacity: 1;
+      position: relative;
+      top: 1px;
+      color: blue;
+    }
+    .nav{
+        position: relative;
+        bottom: 20px;
+        gap: 23em;
+        height: 80px;
+        padding: 10px;
+        
+      }
+      .nav img{
+        position: relative;
+        width: 200px;
+         height: 60px;
+      }
+
+      
+.login i{
+    font-size: 30px;
+    margin-left: 43.6em;
+    position: relative;
+    bottom: 2.9em;
+}
+
+.cont{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  bottom: 510px;
+
+}
+
+
+.logo img{
+  position: relative;
+  bottom: 14px;
+  width: 200px;
+  height: 80px;
+}
+  </style>
+<body>
+<div class="cont">
+   <div class="nav">
+        <div class="logo">
+            <img src="../LOGO/agency/logo10.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../html files/index.html">Home<i class="entypo-record"></i> </a></li>
+            <li><a class="active">About<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/service.html">Service<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/bus.html">Bus<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/tours.html">Tours<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/contact.html">Contact<i class="entypo-record"></i></a></li>
+        </ul>
+      
+  </div>
+    <div class="login">
+        <i class="entypo-login"></i>
+    </div>
+  </div>
+
+  <!--=========== BACK TO TOP BUTTON ==============-->
+
+  <button onclick="topFunction()" id="myBtn" title="Back to top">TOP</button>
+
+  <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function(){scrollfunction()};
+
+      function scrollfunction(){
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+              mybutton.style.display = "block";
+             
+          }
+          else{
+                  mybutton.style.display = "none";
+              }
+      }
+
+      function topFunction(){
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+  </script>
+
+
+<!--========= ABOUT BANNER ============-->
+
+
+    <div class="banner">
+      <h2>About Us </h2>
+      <span><a href="../html files/index.html">Home</a><i> &rightarrow;</i> <a href="../html files/about.html">About</a></span>
+    </div>
+
+    <div class="abt-head">
+      <h3>Who we are ?</h3>
+      <p>We are about a big company as T-Reserve as abbriviation of 
+        Tickets Reservations <br> and we are here for helping you  
+        to get or reserve and book your tickets online and reserving bus <br>
+        
+        </p>
+    </div>
+
+    <div class="about-box">
+      <img src="../LOGO/LOGOS/one (5).png" alt="">
+      <div class="text1">
+        <h3>T - Reserve</h3>
+        <p>
+          <span style="color: blue; font-weight: bold;"> T - Reserve </span>
+           : is company or organization that started in 2022 <br>
+           with the purpose of making easy way in booking or reserving tickets <br>
+            online while travalling from kigali to outside but within the region <br>
+             means in the province of Rwanda and this was made after finding the <br>
+              public problem of too much chous that found in all of the bus parks <br>
+               and even the thievies out there is where idea for T-Reserve come from <br>
+                 and T-Reserve support the future tickets use reservation where you can <br>
+                  reserve ticket for the future use in coming days  and you can reserve <br>
+                   direct tickets for directly use and you can also reserve Bus for traveling <br>
+                    according to the passengers you have   .
+
+        </p>
+      </div>
+    </div>
+
+    <div class="more">
+      <h2>More About Us</h2>
+    </div>
+
+    <div class="more-boxes">
+      <div class="box">
+        <img src="../icon/abt (4).png" alt="">
+        <h3>Our Mission</h3>
+        <hr>
+        <i>
+          Our mission as <span style="color: blue; font-weight: bold;"> T - Reserve </span>
+           is to make more improvements in an online 
+          reservation and prevent the money hands sharing as the vision of Rwanda
+           and main purpose is to prevent chous in the bus parks in rwanda .   
+
+          
+        </i>
+      </div>
+      <div class="box">
+        <img src="../icon/pngegg (5).png" alt="">
+        <h3>Our Vission</h3>
+        <hr>
+        <i>
+          Our vission as <span style="color: blue; font-weight: bold;"> T - Reserve </span>
+           is to make the big change in 
+          tickets reserving system from analog or way of 
+          reserving that was done in bus park with more chours
+           to the digital way of reserving tickets online
+            whithout to go in the bus parks . 
+
+        </i>
+      </div>
+      <div class="box">
+        <img src="../icon/abt (2).png" alt="">
+        <h3>Our values</h3>
+        <hr><br>
+        <p>
+            We work together across boundaries to meet our client’s needs and grow winning team .
+            we put honesty and ethical  first . 
+            we serve our client world-class service beyond their expectations .
+            We go beyond the ordinary to find new and unique way of serving our clients .
+            
+        </p>
+      </div>
+      <!--
+      <div class="box">
+        <img src="../icon/abt (2).png" alt="">
+        <h3>Achievements</h3>
+        <hr>
+        <i>
+          Lorem ipsum dolor sit amet <br>
+           adipisicing elit. Architecto eos  <br>
+            accusamus distinctio minima  <br>
+             omnis tenetur consequatur <br>
+              rerum voluptatibus quis <br>
+           minus et. Pariatur quam sequi ut 
+           omnis tenetur consequatur <br>
+         
+        </i>
+      </div>
+      -->
+    </div>
+
+
+    <!--========= OUR SPECIAL TEAM =================
+
+
+    <h3 style="text-align: center;margin-top: 1em;margin-bottom: 2em;">
+      Meet with our special team
+       <i class="entypo-users" style="color: black; font-size:x-large;"></i></h3>
+
+    
+    <div class="wivin">
+      <div class="crsh">
+          <img src="../photo/kk (3).jpg" alt="">
+          <div class="text">
+              <p>Kagoma Kevin</p>
+              <p>CEO And Founder</p>
+              
+              <p id="icons">
+                  <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                  <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+              </p>
+          </div>
+      </div>
+      <div class="crsh">
+          <img src="../photo/face27.jpg" alt="">
+          <div class="text">
+              <p>Mugisha Serien</p>
+              <p>Manager</p>
+              <p id="icons">
+                <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+              </p>
+          </div>
+      </div>
+      <div class="crsh">
+          <img src="../photo/face17.jpg" alt="">
+          <div class="text">
+              <p>Blue - Prince</p>
+              <p>Admin</p>
+              <p id="icons">
+                <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+              </p>
+          </div>
+      </div>
+      <div class="crsh">
+          <img src="../photo/face23.jpg" alt="">
+          <div class="text">
+              <p>Grace Uwase</p>
+              <p>Secretary </p>
+              <p id="icons">
+                <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                  <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+                </p>
+          </div>
+      </div>
+      <div class="crsh">
+          <img src="../photo/user-06.jpg" alt="">
+          <div class="text">
+              <p>Tress Wivin</p>
+              <p>Supervisor</p>
+              <p id="icons">
+                <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+              </p>
+          </div>
+      </div>
+      
+      
+     
+  </div>
+
+
+  -->
+
+
+
+  
+    <!--============ Our Team ===========-->
+
+    <div class="team">
+      <h1> Meet with Our special Team </h1>
+
+      <div class="team_box">
+          <div class="profile">
+              <img src="../photo/kk (3).jpg">
+
+              <div class="info">
+                <h3 class="name" id="active">Kagoma - Kevin</h3>
+                  <h4 class="name" id="active" style="font-weight: bold;">Founder And CEO</h4><br>
+                 
+                  <div class="team_icon">
+                    <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+                  
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="profile">
+            <img src="../photo/IMG-20230821-WA0009.jpg">
+
+            <div class="info">
+              <h3 class="name">Kagoma - Kevin</h3>
+                <h4 class="name" style="font-weight: bold;">Founder And CEO</h4><br>
+               
+                <div class="team_icon">
+                  <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                  <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+          
+
+          <div class="profile">
+              <img src="../photo/FB_IMG_16921348374515480.jpg">
+
+              <div class="info">
+                <h3 class="name">Mugisha - Serien</h3>
+                  <h4 class="name">Senior-Manager</h4><br>
+                  <div class="team_icon">
+                    <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+                  
+                  </div>
+
+              </div>
+
+          </div>
+
+          <div class="profile">
+              <img src="../photo/one (2).jpg">
+
+              <div class="info">
+                <h3 class="name">Blue - Prince</h3>
+                  <h4 class="name">Manager</h4><br>
+                  
+                  <div class="team_icon">
+                    <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+                  
+                  </div>
+
+              </div>
+
+          </div>
+
+          <div class="profile">
+              <img src="../imeges/a (3).jpg">
+
+              <div class="info">
+                <h3 class="name" id="active">Tress - Wivin</h3>
+                  <h4 class="name" id="active">Admin</h4><br>
+                
+                  <div class="team_icon">
+                    <a href="https://www.facebook.com/"><i class="entypo-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i  class="entypo-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i  class="entypo-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="entypo-linkedin"></i></a>
+                  
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+
+  <!--============= OUR PARTERNERS START HERE ===========-->
+
+    
+<div class="parterners-head">
+  <h1>In pertinership with :</h1>
+</div>
+
+
+<div id="slider">
+
+<div class="parterner">
+  <figure>
+
+  
+  <div class="parterner1">
+
+  <img src="../paterners/parten (1).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+  </div>
+
+  <div class="parterner1" >
+
+  <img src="../paterners/parten (2).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+
+  </div>
+  <div class="parterner1">
+
+  <img src="../paterners/parten (3).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+
+  </div>
+  <div class="parterner1">
+
+  <img src="../paterners/parten (4).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+      
+  </div>
+  <div class="parterner1">
+
+  <img src="../paterners/parten (5).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+      
+  </div>
+  <div class="parterner1">
+
+  <img src="../paterners/parten (6).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+      
+  </div>
+  <div class="parterner1">
+
+  <img src="../paterners/parten (7).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+      
+      </div>
+      <div class="parterner1">
+
+      <img src="../paterners/parten (8).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+          
+      </div>
+      <div class="parterner1">
+
+      <img src="../paterners/parten (9).png" alt="" style="width:200px; height:200px; border-radius:20px;">
+          
+          </div>
+
+</figure>
+  
+</div>
+</div>
+
+
+  
+
+      <!--================== FOOTER =======================-->
+
+      <div class="foot">
+        <div class="image">
+            <img src="../LOGO/agency/logo10.png" alt=""><br><br><br>
+
+           <a href="https//:www.facebook.com"> <i class="entypo-facebook"></i></a>     
+           <a href="https//:www.liknkedin.com"><i class="entypo-linkedin"></i></a>
+            
+            <a href="https//:www.instagram.com"><i class="entypo-instagram"></i></a>
+            <a href="https//:www.twitter.com"> <i class="entypo-twitter"></i></a>
+            <h4>Office Working Hours</h4>
+            <span class="unique">Monday - Friday</span><br>
+            <span> 07 : 30 AM - 21 : 00 PM</span><br>
+            <span class="unique">Saturday - Sunday</span><br>
+            <span>07 : 30 AM - 18 : 30 PM</span>
+             
+        </div>
+        <div class="aboutt">
+            <h3>How To Reserve </h3>
+            <ul>
+              <li>On our Tours page </li>
+              <li>Select your destination </li>
+              <li>Fill the given form to provide imformation</li>
+              <li>Submit your form with filled all filieds required</li>
+              <li>Select your payment method</li>
+              <li>Comfirm your payment</li>
+          </ul>
+            <h4>Newsletter</h4>
+            <i>Please leave us your email <br> to give your subscription <br> if you've satisfied with our services</i><br><br>
+            <form action="" method="post">
+                <input type="email" name="email" placeholder="example@gmail.com"><i class="entypo-mail" style="color: blue;"></i>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <div class="links">
+            <h4 style="margin-left: -1em;">Quick link</h4>
+            <ul>
+                <a href="../html files/index.html"><li>Home</li></a>
+                <a href="../html files/about.html"><li>About</li></a>
+                <a href="../html files/service.html"><li>Service</li></a>
+                <a href="../html files/bus.html"><li>Bus</li></a>
+                <a href="../html files/tours.html"><li>Tours</li></a>
+                <a href="../html files/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+       
+        <div class="our-service">
+            <h4>Our services</h4>
+            <ol>
+                <a href=""><li>Bus reservation</a></li>
+                <li><a href=""><li>Direct ticket </a></li>
+                <li><a href=""><li>Future use ticket </a></li>
+                
+            </ol>
+              <h4>Map<i class="entypo-location"></i></h4>
+            <img src="../1280x768/natcoms2.png" alt="">
+              </div>
+        <div class="address">
+            <h4>Contact us</h4>
+            
+         
+            <a href="https//:www.facebook.com"><i class="entypo-facebook"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.twitter.com"><i class="entypo-twitter"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.instagram.com"><i class="entypo-instagram"></i>@t-reserve_rw</a><br><br>
+            <a href="https//:www.t-reserve.com"><i class="entypo-home" style="font-style: normal ;">www.t-reserve.com</a></i><br><br>
+            <i class="entypo-mobile">+250 - 7800 - 94116</i><br>
+            <h4>Address</h4>
+            <i class="entypo-location"></i>Kigali - Rwanda <br>
+            <i class="entypo-map"></i>Kacyiru - Kinamba
+
+        </div>
+        
+      </div>
+
+      <div class="footer">
+        <i>&COPY;copyright 2023 all right reserved | T-reserve company ltd |&heartsuit; Desgned by Kagoma_kevin &hearts; </i>
+      </div>
+
+
+</body>
+</html>

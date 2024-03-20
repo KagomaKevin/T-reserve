@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css files/entypo.css">
+    <link rel="stylesheet" href="../css files/header.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../LOGO/agency/logo10.png">
+    <link rel="stylesheet" href="../css files/service.css">
+</head>
+<style>
+  
+    .nav i{
+      opacity: 0;
+      color: blue;
+      font-size: large;
+      position: relative;
+      top: 15px;                  
+      transition: .3s ease-in-out;
+    }
+
+    .active i{
+      opacity: 1;
+      position: relative;
+      top: 2px;
+      font-size: larger;
+    }
+
+    .nav li a:hover i{
+      opacity: 1;
+      position: relative;
+      top: 1px;
+      color: blue;
+      transition: .3s ease-in-out;
+    }
+    .nav{
+        position: relative;
+        bottom: 10px;
+        height: 80px;
+        gap: 23em;
+        padding: 10px;
+      }
+      .nav img{
+        position: relative;
+        
+        width: 200px;
+         height: 60px;
+      }
+
+      
+.login i{
+    font-size: 30px;
+    margin-left: 43.6em;
+    position: relative;
+    bottom: 2.4em;
+}
+ul{
+    position: relative;
+    top: 5px;
+}
+
+
+.cont{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  bottom: 518px;
+
+}
+
+.logo img{
+  position: relative;
+  bottom: 14px;
+  width: 200px;
+  height: 80px;
+ 
+}
+  </style>
+
+<body>
+  <div class="cont">
+    <div class="nav">
+        <div class="logo">
+            <img src="../LOGO/agency/logo10.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../html files/index.html">Home<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/about.html">About<i class="entypo-record"></i> </a></li>
+            <li><a class="active">Service<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/bus.html">Bus<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/tours.html">Tours<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/contact.html">Contact<i class="entypo-record"></i></a></li>
+        </ul>
+      
+    </div>
+    <div class="login">
+        <i class="entypo-login"></i>
+    </div>
+  </div>
+
+    
+  <!--=========== BACK TO TOP BUTTON ==============-->
+
+  <button onclick="topFunction()" id="myBtn" title="Back to top">TOP</button>
+
+  <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function(){scrollfunction()};
+
+      function scrollfunction(){
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+              mybutton.style.display = "block";
+             
+          }
+          else{
+                  mybutton.style.display = "none";
+              }
+      }
+
+      function topFunction(){
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+  </script>
+
+<!--========= ABOUT BANNER ============-->
+
+
+<div class="banner">
+  <h2>Services </h2>
+  <span><a href="../html files/index.html">Home</a><i> &rightarrow;</i> <a href="../html files/contact.html">Contact</a></span>
+ </div>
+
+  <div class="services">
+
+    <div class="service-head">
+      <h2>WHAT WE OFFER</h2>
+      <p>
+        As <span style="color: blue; font-weight: bold;"> T - Reserve </span> We Offer Many Services Such As The Following :<br>
+         Bus - Reservation , Future Use Ticket - Reservation , Direct tickets Reservation . <br>
+         And you can read more about those as listed below .
+      </p>
+    </div>
+
+
+    <div class="service">
+
+
+      <div class="service-box">
+            <img src="../LOGO/LOGOS/used (3).png" alt="">
+            <p class="par" style="margin-left: -3em;">BUS - RESERVATION</p><br>
+            <hr>
+        <p>
+          In T-Reserve you can book or reserve bus you want in easy way according to the passengers you have
+          In this service is where you can you also book
+            bus for travel even you can also reserve it
+            directly or future use As Simple As Possible
+            and you are obligated to not later cause if do soo we don't pay you back .
+
+        </p>
+        <a href="../html files/bus.html"><button style="position: relative; top:3px;">RESERVE</button></a>
+      </div>
+      <div class="service-box">
+        <img src="../LOGO/LOGOS/used (2).png" alt="">
+        <P class="par">FUTURE USE - TICKET RESERVATION</P><br>
+        <hr>
+        <p>
+          This service consist of how you can reserve your tickets which
+           must be used in future or coming days where you can set the day
+            and date even the time you need it and then you reserve it 
+            As Simple As Possible  and you are obligated to not later cause if do soo we don't pay you back .
+
+        </p>
+        <a href="../html files/tours.html"><button>RESERVE</button></a>
+      </div>
+      <div class="service-box">
+        <img src="../LOGO/LOGOS/used (1).png" alt="">
+        <p class="par">DIRECT - TICKET RESERVATION </p><br>
+        <hr>
+        <p>
+          As T - Reserve we have many services including this
+           one of how you can reserve your tickets This service 
+           it consist of how you can reserve your tickets directly
+            on current day not in coming days As Simple As Possible
+             and you are obligated to not later cause if do soo we don't pay you back .
+
+        </p>
+        <a href="../html files/tours.html"><button>RESERVE</button></a>
+      </div>
+
+
+    </div>
+
+
+    
+      <!--================== FOOTER =======================-->
+
+      <div class="foot">
+        <div class="image">
+            <img src="../LOGO/agency/logo10.png" alt=""><br><br><br>
+
+            <i class="entypo-facebook"></i>     
+            <i class="entypo-linkedin"></i>
+            
+            <i class="entypo-instagram"></i>
+            <i class="entypo-twitter"></i>
+            <h4>Office Working Hours</h4>
+            <span class="unique">Monday - Friday</span><br>
+            <span> 07 : 30 AM - 21 : 00 PM</span><br>
+            <span class="unique">Saturday - Sunday</span><br>
+            <span>07 : 30 AM - 18 : 30 PM</span>
+             
+        </div>
+        <div class="aboutt">
+          <h3>How To Reserve </h3>
+          <ul>
+            <li>On our Tours page </li>
+            <li>Select your destination </li>
+            <li>Fill the given form to provide imformation</li>
+            <li>Submit your form with filled all filieds required</li>
+            <li>Select your payment method</li>
+            <li>Comfirm your payment</li>
+        </ul>
+            <h4>Newsletter</h4>
+            <i>Please leave us your email to give your subscription <br>
+               if you've satisfied with our services</i><br><br>
+            <form action="" method="post">
+                <input type="email" name="email" placeholder="example@gmail.com"><i class="entypo-chat" style="color: blue;"></i>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <div class="links">
+            <h4 style="margin-left: -1em;">Quick link</h4>
+            <ul>
+                <a href="../html files/index.html"><li>Home</li></a>
+                <a href="../html files/about.html"><li>About</li></a>
+                <a href="../html files/service.html"><li>Service</li></a>
+                <a href="../html files/bus.html"><li>Bus</li></a>
+                <a href="../html files/tours.html"><li>Tours</li></a>
+                <a href="../html files/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+       
+        <div class="our-service">
+            <h4>Our services</h4>
+            <ol>
+                <a href=""><li>Bus reservation</a></li>
+                <li><a href=""><li>Direct ticket </a></li>
+                <li><a href=""><li>Future use ticket </a></li>
+                
+            </ol>
+              <h4>Map<i class="entypo-location"></i></h4>
+            <img src="../1280x768/natcoms2.png" alt="">
+              </div>
+        <div class="address">
+            <h4>Contact us</h4><br>
+            
+            
+             
+            <a href="https//:www.facebook.com"><i class="entypo-facebook"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.twitter.com"><i class="entypo-twitter"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.instagram.com"><i class="entypo-instagram"></i>@t-reserve_rw</a><br><br>
+            <a href="https//:www.t-reserve.com"><i class="entypo-home" style="font-style: normal ;">www.t-reserve.com</a></i><br><br>
+            <i class="entypo-mobile">+250 - 7800 - 94116</i><br>
+            <h4>Address</h4>
+            <i class="entypo-location"></i>Kigali - Rwanda <br>
+            <i class="entypo-map"></i>Kacyiru - Kinamba 
+
+        </div>
+        
+      </div>
+
+      <div class="footer">
+        <i>&COPY;copyright 2023 all right reserved | T-reserve company ltd |&heartsuit; Desgned by Kagoma_kevin &hearts; </i>
+      </div>
+
+   
+</body>
+</html>

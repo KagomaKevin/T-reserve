@@ -1,0 +1,733 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    scroll-behavior: smooth;
+}
+/*========= BANER FOR ABOUT ==========*/
+
+
+.banner h2{
+    position: relative;
+    top: 130px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.banner i{
+    font-size: xx-large;
+    color: white;
+}
+.banner{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.768),rgba(7, 7, 7, 0.576)),url(../imeges/CA-wp5.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 67vh;
+    background-attachment: fixed;
+    position: relative;
+    top: 60px;
+}
+.banner span{
+    
+    position: relative;
+    top: 180px;
+    margin-left: 36em;
+    letter-spacing: 3px;
+}
+
+
+
+.banner span a{
+    color:white;
+    font-size: x-large;
+}
+
+
+.banner span a:hover{
+    color:  rgb(168, 147, 147);
+    font-size: x-large;
+}
+/*========== ABOUT HEAD ========*/
+
+.abt-head{
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-size: larger;
+    
+}
+
+.abt-head h3{
+    position: relative;
+    top: -30px;
+    margin-top: 2em;
+    color: blue;
+    border-left: 5px blue solid;
+    border-right: 5px blue solid;
+    width: 210px;
+    border-radius: 7px;
+    margin-left: 26em;
+    height: 30px;
+}
+
+.abt-head p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 27px;
+}
+
+
+
+.about-box{
+    display: flex;
+    margin-top: 10em;
+    margin-left: 10em;
+    padding: 17px;
+    gap: 4em;
+}
+
+.text1 h3{
+    color: blue;
+    
+    border-left: 6px solid blue;
+    border-radius: 5px;
+    width: 120px;
+    padding: 7px;
+    height: 35px;
+}
+.about-box img{
+    width: 400px;
+    height: 300px;
+}
+
+.about-box p{
+    position: relative;
+    top: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: 480;
+    padding: 10px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.text{
+    position: relative;
+    top: 40px;
+}
+
+.more h2{
+   
+    margin: 4px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+   border-left: 5px solid blue;
+   border-right: 5px blue solid;
+   width: 200px;
+   margin-left: 23em;
+   border-radius: 10px;
+   color: blue;
+   padding: 6px;
+}
+
+/*=========== MORE BOXES =============*/
+
+.box{
+    background-color: white;
+    box-shadow: 10px 20px 30px 20px gainsboro;
+    height: 400px;
+    width: 330px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 4em;
+}
+
+.more-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+
+.box img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    top: 10px;
+    transition: .7s ease-in-out;
+}
+
+.box h3{
+   text-align: center;
+   position: relative;
+    top: 17px;
+}
+
+hr{
+    height: 4px;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    display: block;
+    width: 20px;
+    background-color: blue;
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+
+.box:hover hr{
+    background-color: blue;
+    width: 100%;
+    transition: .5s ease-in-out;
+    height: 4px;
+    opacity: 1;
+}
+
+.box:hover img{
+    transform: translateY(-17px);
+    transition: .7s ease-in-out;
+     /*transform: rotate(360deg);*/ 
+}
+
+.box i{
+    color: black;
+    font-style: normal;
+    line-height: 27px;
+    padding: 10px;
+    position: relative;
+    top: 31px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.box p{
+    position: relative;
+    top: 31px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 22px;
+}
+
+
+
+
+/*============= OUR SPACIAL TEAM ===============
+
+
+
+
+.wivin{
+    margin-top: 6em;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 30px;
+   
+   }
+
+
+.crsh{
+    background-color:white;
+    box-shadow: 10px 20px 30px black;
+    height: 250px;
+    width: 200px;
+    border-radius: 15px;
+    
+}
+
+.crsh img{
+    border-radius: 100%;
+    margin-top: 1em;
+    margin-left: 2.6em;
+    width: 120px;
+    height: 120px;
+}
+
+
+.crsh:hover img{
+    transform:translateY(-60px);
+    transition: .3s ease-in-out;
+}
+
+.crsh:hover p{
+    transform:translateY(-30px);
+    transition: .3s ease-in-out;
+}
+
+.text p{
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+}
+.text #icons{
+    
+    opacity: 0;
+    position: relative;
+    transition: .3s ease-in-out;
+    bottom: 3px;
+    
+}
+.crsh:hover #icons{
+
+    opacity: 1;
+    transition: .3s ease-in-out;
+    position: relative;
+    top: -20px;
+    
+    transform: scale(0.9);
+}
+.text #icons i{
+    border: 2px solid blue;
+    color:blue;
+    padding: 3px;
+    font-size: medium;
+    margin: 1px;
+    border-radius: 1px;
+    transition: .5s ease-in-out;
+}
+
+.text #icons i{
+    color: blue;
+}
+
+.text #icons a:hover i{
+    background-color: blue;
+    color: white;
+}
+
+
+*/
+
+
+
+/*Team*/
+
+.team{
+    margin-bottom: 11em;
+    margin-top: 3em;
+    color: blue;
+}
+.team h1{
+    display: flex;
+    
+    border-top: 5px blue solid;
+    width: 800px;
+    border-radius: 10px;
+    margin-left: 4em;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+
+.team .team_box .profile{
+    width: 220px;
+    height: 300px;
+    border-radius: 50%;
+    background-color:transparent;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+    border-radius: 10px;
+    height: 300px;
+    width: 220px;
+    background-color: whitesmoke;
+}
+
+.team .team_box .profile img{
+    width: 180px;
+    height: 240px;
+    position: relative;
+    top: 10px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 10px;
+    margin-top: -230px;
+    transition: .6s ease-in-out;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+    top: 60%;
+}
+
+.team .team_box .profile .info .name{
+    
+    color:blue;
+   position: relative;
+   bottom: 10px;
+    line-height: 1px;
+    margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+    position: relative;
+    bottom: 10px;
+    border: 2px solid blue;
+    color:blue;
+    padding: 3px;
+    font-size: medium;
+    margin: 1px;
+    border-radius: 1px;
+    transition: .5s ease-in-out;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color: white;
+    background-color: blue;
+    
+}
+
+
+
+/*========= OUR PARTENERS SECTION START HERE =======*/
+
+
+
+
+.parterners-head{
+    text-align: center;
+    margin-top: 4em;
+    
+    position: relative;
+    top: 70px;
+    margin-bottom: 5em;
+}
+
+.parterners-head h1{
+    color: blue;
+    border-radius: 8px;
+    border-left: 7px blue solid;
+    height: 40px;
+    font-size: xx-large;
+    width: 340px;
+    margin-left: 3em;
+}
+
+.parterner{
+    display: flex;
+    margin: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+}
+
+.parterner1{
+   
+    background-color: white;
+    box-shadow: 20px 10px 15px rgb(172, 172, 172);
+    height: 220px;
+    width: 250px;
+    border-radius: 20px;
+  
+}
+
+/*OUR PARTENERS SLIDE SHOW SECTION START HERE*/
+
+#slider {
+	overflow:hidden;
+    position: relative;
+    top: 50px;
+}
+#slider figure {
+	position: relative;
+	width: 230%;
+	margin: 0;
+    display: flex;
+    gap: 6em;
+	left: 2em;
+	animation: 35s slider infinite;
+}
+#slider figure img {
+	float: right;
+	height: 600px;
+    
+	width: 10%;
+}
+
+@keyframes slider {
+	10% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	30% {
+		left: -100%;
+	}
+	40% {
+		left: -100%;
+	}
+	
+}
+
+
+
+
+
+/*================ FOOTER ===============*/
+
+
+.foot{
+    background-color: white;
+    border-top: 2px blue solid;
+   
+    height: 550px;
+    margin-top: 10em;
+    display: flex;
+    gap: 4em;
+}
+
+.foot h4,h3{
+    color: blue;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.foot p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    line-height: 30px;
+    
+}
+
+.foot a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.foot a:hover{
+    color: blue;
+    transition: .2s ease-in-out;
+    font-weight: bold;
+}
+
+.image img{
+    width: 270px;
+    padding: 20px;
+    height: 200px;
+    position: relative;
+    top: 10px;
+    left: -21px;
+}
+
+.image span{
+    margin-left: 1em;
+    padding: 10px;
+    line-height: 30px;
+    
+}
+
+.unique{
+    color: blue;
+    font-weight: bold;
+}
+
+.image{
+    position: relative;
+    top: 10px;
+}
+
+.image i{
+    position: relative;
+    bottom: 40px;
+    cursor: pointer;
+    font-size: large;
+    left: 15px;
+    color: blue;
+    margin-left: .5em;
+    padding: 3px;
+    border: 2px blue solid;
+    transition: .2s ease-in-out;
+}
+
+.image i:hover{
+    background-color: blue;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-weight: 10px;
+    color: blue;
+}
+
+.links a{
+    color: blue;
+}
+
+.our-service ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.our-service img{
+    height: 150px;
+    margin-left: -2em;
+}
+.our-service ol a{
+    color: blue;
+}
+
+.address img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.aboutt input{
+    border: 2px blue solid;
+    width: 260px;
+    outline: none;
+    height: 40px;
+}
+
+
+
+form i{
+    margin-left: 8em;
+    right: -10px;
+    color: blue;
+    position: relative;
+    bottom: 40px;
+    font-size: x-large;
+}
+.aboutt button{
+    width: 60px;
+    position: relative;
+    left: 8px;
+    
+    border: 2px blue solid;
+    color: blue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    height: 40px;
+}
+
+
+.aboutt ul{
+    list-style-type:decimal;
+    position: relative;
+    top: -10px;
+    line-height: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.aboutt i{
+    font-style: normal;
+    color: black;
+}
+
+.aboutt button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+
+.aboutt form i{
+    margin-left: -2em;
+    right: 10px;
+    position: relative;
+    top:  2px;
+}
+
+.footer{
+    position: relative;
+    bottom: 30px;
+    margin-left: 19em;
+    
+}
+
+
+.address a ,i{
+    color: blue;
+}
+
+.footer i{
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 7px;
+    scroll-behavior: smooth;
+    
+    
+}
+
+::-webkit-scrollbar-track{
+    border-radius:0;
+    scroll-behavior: smooth;
+    box-shadow: outset 40px 30px 50px white;
+}
+
+::-webkit-scrollbar-thumb{
+    scroll-behavior: smooth;
+    background: blue;
+    border-radius: 100%;
+}

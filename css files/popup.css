@@ -1,0 +1,128 @@
+    /* HEADER */
+    
+    form{
+    line-height: 40px;
+    
+    }
+    form input[type=text],input[type=password]{
+    height: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px blue solid;
+    width: 340px;
+    position: absolute;
+    left: 90px;
+    background-color: gainsboro;
+    padding: 15px;
+    border-radius: 5px;
+    
+    }
+    
+    
+    label{
+    color: blue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:600;
+    position: absolute;
+    left: 90px;
+    }
+    
+    .popup{
+      width: 500px;
+      border-radius: 6px;
+      background-color:#fff;
+      top: 7%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%) scale(0.1);
+      text-align: center;
+      padding: 0 30px 30px;
+      color: #fa0606;
+      visibility: hidden;
+      transition: transform .7s,top .7s;
+    }
+    .open-popup{
+      top: 50%;
+      visibility: visible;
+      transform: translate(-50%,-50%) scale(1);
+    
+    }
+    .popup h2{
+      font-size: 38px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: blue;
+      font-weight: 500;
+      margin: 30px 0 10px;
+    }
+    
+   .popup i{
+    
+    padding: 10px;
+    position: absolute;
+    top: 293px;
+    left: 260px;
+    font-style: normal;
+    font-weight:lighter;
+    font-family:sans-serif;
+    color: blue;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    }
+    
+    .popup p{
+    color: blue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 10px;
+    }
+    
+    form img{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 285px;
+    left: 420px;
+    }
+    .popup form input[type=radio]{
+    background-color: red;
+    padding: 90px;
+    position: absolute;
+    top: 260px;
+    font-size: x-large;
+    font-weight: bolder;
+    height: 50px;
+    }
+    .popup hr{
+    background-color: blue;
+    height: 5px;
+    border-radius: 10px;
+    
+    }
+    .popup span{
+    color: blue;
+    font-style: normal;
+    font-weight:lighter;
+    font-family:sans-serif;
+    padding: 10px;
+    position: absolute;
+    top: 310px;
+    left: 90px;
+    }
+    
+    .popup button{
+      width: 100%;
+      border-radius: 4px;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      margin-top: 80px;
+      padding: 10px 0;
+      background-color: #6fd469;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 5px 17px rgb(0,0,0,0.2);
+    
+    
+    }
+      
+    

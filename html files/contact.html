@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css files/entypo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../LOGO/agency/logo10.png">
+     <link rel="stylesheet" href="../css files/header.css">
+    <link rel="stylesheet" href="../css files/contact.css">
+</head>
+<style>
+
+  .all{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    bottom: 545px;
+  }
+ 
+    .nav i{
+      opacity: 0;
+      color: blue;
+      font-size: large;
+      position: relative;
+      top: 15px;
+      transition: .3s ease-in-out;
+    }
+
+    .active i{
+      opacity: 1;
+      position: relative;
+      top: 2px;
+      font-size: larger;
+    }
+
+    .nav li a:hover i{
+      opacity: 1;
+      position: relative;
+      top: 1px;
+      color: blue;
+      transition: .3s ease-in-out;
+    }
+    .nav{
+        position: relative;
+        bottom: -15px;
+        gap: 23em;
+        height: 80px;
+        padding: 10px;
+      }
+      .nav img{
+        position: relative;
+        width: 200px;
+         height: 60px;
+      }
+
+      
+.login i{
+    font-size: 30px;
+    margin-left: 43.8em;
+    position: relative;
+    bottom: 1.6em;
+}
+ul{
+    position: relative;
+    top: 3px;
+}
+
+
+.nav img{
+    position: relative;
+    bottom: 15px;
+    width: 200px;
+     height: 83px;
+  }
+
+  #text {
+    display:none;
+    color:red
+}
+  </style>
+
+<body>
+  <div class="all">
+    <div class="nav">
+        <div class="logo">
+            <img src="../LOGO/agency/logo10.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../html files/index.html">Home<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/about.html">About<i class="entypo-record"></i> </a></li>
+            <li><a href="../html files/service.html">Service<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/bus.html">Bus<i class="entypo-record"></i></a></li>
+            <li><a href="../html files/tours.html">Tours<i class="entypo-record"></i></a></li>
+            <li><a class="active">Contact<i class="entypo-record"></i></a></li>
+        </ul>
+      
+    </div>
+    <div class="login">
+        <i class="entypo-login"></i>
+    </div>
+  </div>
+       
+  
+  <!--=========== BACK TO TOP BUTTON ==============-->
+
+  <button onclick="topFunction()" id="myBtn" title="Back to top">TOP</button>
+
+  <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function(){scrollfunction()};
+
+      function scrollfunction(){
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+              mybutton.style.display = "block";
+             
+          }
+          else{
+                  mybutton.style.display = "none";
+              }
+      }
+
+      function topFunction(){
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+  </script>
+
+<!--========= ABOUT BANNER ============-->
+
+
+<div class="banner">
+  <h2>CONTACT US </h2>
+  <span><a href="../html files/index.html">Home</a><i> &rightarrow;</i> <a href="../html files/contact.html">Contact</a></span>
+   </div>
+
+<!--======== CONTACT SECTION ==========-->
+<div class="c-head">
+<h1>KEEP IN TOUCH WITH US &phone;</h1>
+</div>
+<div class="contai">
+
+  <div class="icon">
+      <div class="icon1">
+          <img src="../icons/location (1).gif" alt="">
+      <div class="txt" style="margin-left:19em;position: relative;top: -54px;">
+          <span>Address</span>
+          <h5>Kigali - Rwanda</h5>
+          <h5>Kinamba street , KN-350G</h5>
+      </div>
+      </div>
+  </div>
+  <div class="icon">
+      <div class="icon2">
+          <img src="../icons/phone1.gif" alt="">
+      <div class="text1">
+          <span>Phone</span>
+          <h5>+250 786 089 197</h5>
+          <h5>+250 780 094 116</h5>
+      </div>
+      </div>
+  </div>
+  <div class="icon">
+      <div class="icon3">
+          <img src="../icons/mails.gif" alt="">
+      <div class="text2">
+          <span>E-mail Address</span>
+          <h5>t-reserve120@gmail.com</h5>
+          
+      </div>
+      </div>
+  </div>
+
+  <div class="form">
+      <h3>Send Us Message</h3>
+      <form action="contact-process.php" method="POST">
+          <label for="Full_Name">Name <sup>*</sup> </label>
+          <input type="text" required name="full_name" placeholder="Full_Name"><i class="entypo-user"></i><br>
+          <label for="email">E-mail <sup>*</sup></label>
+          <input type="email" name="email" id="myInput" required placeholder="example@gmail.com"><i class="entypo-mail"></i><br>
+          <p id="text">WARNING ! CAPSLOCK IS ON !</p>
+          <label for="Message">Message <sup>*</sup></label>
+          <textarea name="messages" id="" cols="30" rows="3" placeholder="Your suggestions"></textarea><i class="entypo-chat"></i><br><br>
+          <button type="submit" name="submit">SEND</button>
+      </form>
+  </div>
+</div>
+
+<script>
+    var input = document.getElementById("myInput");
+    var text = document.getElementById("text");
+
+    input.addEventListener("keyup", function(event){
+
+        if (event.getModifierState("CapsLock")) {
+            text.style.display = "block";
+        } else{
+            text.style.display = "none"
+        }
+    });
+</script>
+<div class="addres">
+  <h3>Vist Us On :</h3>
+  <br> 
+  <a href="https//:www.facebook.com"><i class="entypo-facebook"></i>t-reserve_rw</a><br><br>
+  <a href="https//:www.twitter.com"><i class="entypo-twitter"></i>t-reserve_rw</a><br><br>
+  <a href="https//:www.liknkedin.com"><i class="entypo-linkedin">www.t-reserve.com</a></i><br><br>
+  <a href="https//:www.instagram.com"><i class="entypo-instagram"></i>@t-reserve_rw</a><br><br>
+   <i class="entypo-home" style="font-style: normal ;"><a href="#">www.t-reserve.com</a></i><br><br>
+   <h3>Get location<i class="entypo-location"></i></h3><br>
+   <img src="../1280x768/natcoms2.png" alt="" style="height: 180px;">
+  
+</div>
+
+
+
+
+  
+
+      <!--================== FOOTER =======================-->
+
+      <div class="foot">
+        <div class="image">
+            <img src="../LOGO/agency/logo10.png" alt=""><br><br><br>
+
+            <i class="entypo-facebook"></i>     
+            <i class="entypo-linkedin"></i>
+            
+            <i class="entypo-instagram"></i>
+            <i class="entypo-twitter"></i>
+            <h4>Office Working Hours</h4>
+            <span class="unique">Monday - Friday</span><br>
+            <span> 07 : 30 AM - 21 : 00 PM</span><br>
+            <span class="unique">Saturday - Sunday</span><br>
+            <span>07 : 30 AM - 18 : 30 PM</span>
+             
+        </div>
+        <div class="aboutt">
+            <h3>How To Reserve </h3>
+            <ul>
+                <li>On our Tours page </li>
+                <li>Select your destination </li>
+                <li>Fill the given form to provide imformation</li>
+                <li>Submit your form with filled all filieds required</li>
+                <li>Select your payment method</li>
+                <li>Comfirm your payment</li>
+            </ul>
+            <h4>Newsletter</h4>
+            <i>Please leave us your email to give your subscription <br>
+               if you've satisfied with our services</i><br><br>
+            <form action="" method="post">
+                <input type="email" name="email" placeholder="example@gmail.com"><i class="entypo-chat" style="color: blue;"></i>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <div class="links">
+            <h4 style="margin-left: -1em;">Quick link</h4>
+            <ul>
+                <a href="../html files/index.html"><li>Home</li></a>
+                <a href="../html files/about.html"><li>About</li></a>
+                <a href="../html files/service.html"><li>Service</li></a>
+                <a href="../html files/bus.html"><li>Bus</li></a>
+                <a href="../html files/tours.html"><li>Tours</li></a>
+                <a href="../html files/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+       
+        <div class="our-service">
+            <h4>Our services</h4>
+            <ol>
+                <a href=""><li>Bus reservation</a></li>
+                <li><a href=""><li>Direct ticket </a></li>
+                <li><a href=""><li>Future use ticket </a></li>
+                
+            </ol>
+              <h4>Map<i class="entypo-location"></i></h4>
+            <img src="../1280x768/natcoms2.png" alt="">
+              </div>
+        <div class="address">
+            <h4>Contact us</h4><br>
+            
+            
+             
+            <a href="https//:www.facebook.com"><i class="entypo-facebook"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.twitter.com"><i class="entypo-twitter"></i>t-reserve_rw</a><br><br>
+            <a href="https//:www.instagram.com"><i class="entypo-instagram"></i>@t-reserve_rw</a><br><br>
+            <a href="https//:www.t-reserve.com"><i class="entypo-home" style="font-style: normal ;">www.t-reserve.com</a></i><br><br>
+            <i class="entypo-mobile">+250 - 7800 - 94116</i><br>
+            <h4>Address</h4>
+            <i class="entypo-location"></i>Kigali - Rwanda <br>
+            <i class="entypo-map"></i>Kacyiru - Kinamba 
+
+        </div>
+        
+      </div>
+
+      <div class="footer">
+        <i>&COPY;copyright 2023 all right reserved | T-reserve company ltd |&heartsuit; Desgned by Kagoma_kevin &hearts; </i>
+      </div>
+
+    
+</body>
+</html>
